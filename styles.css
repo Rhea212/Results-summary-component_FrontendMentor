@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content:center;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
     min-width: 37.5rem;
     max-width: 90rem;
@@ -43,7 +43,7 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 0.625rem;
-    font-size: 0.0625rem;
+    font-size: 0.875rem;
     margin-bottom: 0.8125rem;
     border-radius: 0.3125rem;
     
@@ -59,7 +59,7 @@ span:not(.bold) {
 }
 
 .total {
-    position: absolute;
+    flex: 1;
     z-index:2;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%, 1), hsl(241, 81%, 54%));
     text-align: center;
@@ -103,7 +103,7 @@ span:not(.bold) {
 .max,
 .fact {
     color: hsl(241, 100%, 89%);
-    font-size: 0.0625rem;
+    font-size: 0.875rem;
 
 }
 
@@ -126,8 +126,9 @@ span:not(.bold) {
 }
 
 .summary {
-    position:relative;
-    right:-15rem;
+    flex: 1;
+    position: relative;
+    left:-1rem;
     z-index: 1;
     padding: 25px;
     padding-left: 2.5rem;
@@ -143,17 +144,18 @@ span:not(.bold) {
     font-size: 1.125rem;
     font-weight: 700;
     margin: 0;
-    padding-bottom: 1rem;
+    
 }
 
 .button {
     background-color: black;
     color: white;
-    font-size: 0.0625rem;
+    font-size: 0.875rem;
     text-align: center;
     padding: 0.625rem;
     border-radius: 1.25rem;
     margin-top: 1.75rem;
+    margin-bottom: 0;
 }
 
 .button:hover {
